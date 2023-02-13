@@ -1,0 +1,12 @@
+version: "2"
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: userpassword
+      MYSQL_DATABASE: database
+      MYSQL_USER: user
+      MYSQL_PASSWORD: userpassword
+    tty: true
+    ports:
+      - "3306:3306"
